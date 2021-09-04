@@ -28,7 +28,7 @@ def home():
 
 @app.route("/model_api", methods=["POST"])
 def api():
-    detector = cv2.CascadeClassifier('cascades\haarcascade_frontalface_default.xml')
+    detector = cv2.CascadeClassifier('.\cascades\haarcascade_frontalface_default.xml')
     data = json.loads(request.data)
     # print(data["image"])
     # print(data["image"][2])
